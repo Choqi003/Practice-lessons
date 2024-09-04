@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise: 12g</title>
+    <style>
+      p {
+        font-family: arial;
+        margin: 0;
+      }
+
+      .img1 {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50px;
+        border-width: 1px;
+        border-color: gray;
+        border-style: solid;
+      }
+      .outer {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        flex-direction: column;
+        row-gap: 15px;
+      }
+      .prof1 {
+        display: grid;
+        grid-template-columns: 50px 200px 1fr;
+        align-items: center;
+        width: 400px;
+        justify-content: space-between;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .desc {
+        color: rgb(96, 96, 96);
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .stats {
+        color: rgb(96, 96, 96);
+        font-size: 11px;
+      }
+      .follow {
+        color: white;
+        background-color: rgb(0, 140, 255);
+        border: none;
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.15s, opacity 0.15s;
+      }
+      .follow:hover {
+        background-color: rgb(0, 110, 255);
+      }
+      .follow:active {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="prof1">
+        <div><img src="oliver.jpg" class="img1" /></div>
+        <div style="margin-left: 10px">
+          <p class="name">Oliver</p>
+          <p class="desc">The cat</p>
+          <p class="stats">Popular</p>
+        </div>
+        <div>
+          <button class="follow">Follow</button>
+        </div>
+      </div>
+
+      <div class="prof1">
+        <div><img src="mimi.jpg" class="img1" /></div>
+        <div style="margin-left: 10px">
+          <p class="name">Mimi</p>
+          <p class="desc">Sleepy Cat</p>
+          <p class="stats">Popular</p>
+        </div>
+        <div>
+          <button class="follow">Follow</button>
+        </div>
+      </div>
+
+      <div class="prof1">
+        <div><img src="rex.jpg" class="img1" /></div>
+        <div style="margin-left: 10px">
+          <p class="name">Rex</p>
+          <p class="desc">Happy Bulldog</p>
+          <p class="stats">Popular</p>
+        </div>
+        <div>
+          <button class="follow">Follow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
