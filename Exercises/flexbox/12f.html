@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise: 12f</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 40px;
+        align-items: center;
+        background-color: rgb(156, 61, 175);
+      }
+      .textbox {
+        width: 400px;
+      }
+      .mid {
+        width: 300px;
+      }
+      .right {
+        margin-right: 10px;
+      }
+      .left {
+        margin-left: 10px;
+      }
+      p {
+        font-family: arial;
+        font-weight: bold;
+        color: white;
+        font-size: 12px;
+      }
+      .textbox {
+        border-radius: 15px;
+        border: none;
+        padding: 5px;
+        width: 300px;
+        padding-left: 15px;
+        font-size: 10px;
+        font-family: arial;
+      }
+
+      button {
+        border-color: white;
+        color: white;
+        background-color: rgb(156, 61, 175);
+        border-width: 1px;
+        padding: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left"><p>Home</p></div>
+      <div class="mid">
+        <input class="textbox" type="text" placeholder="Search" />
+      </div>
+      <div class="right"><button>Download</button></div>
+    </div>
+  </body>
+</html>
