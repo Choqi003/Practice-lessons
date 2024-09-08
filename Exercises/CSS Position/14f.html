@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise: 14f</title>
+
+    <style>
+      .profilepic {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: border-radius 0.2s;
+      }
+
+      .profilepic:hover {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        background-color: rgb(26, 26, 26);
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 55px;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 10px;
+          margin-top: 10px;
+        "
+      >
+        <div>
+          <img
+            class="profilepic"
+            src="/html-css-course/Exercises/Div Element/cat.jpg"
+          />
+        </div>
+        <div>
+          <img
+            class="profilepic"
+            src="/html-css-course\Exercises\Div Element\sam.jpg"
+          />
+        </div>
+        <div>
+          <img
+            class="profilepic"
+            src="/html-css-course\Exercises\Div Element\profile3.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        background-color: rgb(43, 45, 49);
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 190px;
+        margin-left: 55px;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          height: 30px;
+          width: 150px;
+          padding-left: 20px;
+        "
+      >
+        <p
+          style="
+            font-family: Arial;
+            font-weight: 600;
+            color: white;
+            font-size: 13px;
+          "
+        >
+          INFO
+        </p>
+        <p
+          style="
+            color: rgb(128, 132, 142);
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 10px;
+          "
+        >
+          +
+        </p>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          padding-left: 20px;
+          row-gap: 13px;
+          margin-top: 15px;
+        "
+      >
+        <p
+          style="
+            color: rgb(128, 132, 142);
+            font-family: arial;
+            font-size: 15px;
+            margin: 0;
+          "
+        >
+          # new-videos
+        </p>
+        <p
+          style="
+            color: rgb(128, 132, 142);
+            font-family: arial;
+            font-size: 15px;
+            margin: 0;
+          "
+        >
+          # updates
+        </p>
+        <p
+          style="
+            color: rgb(128, 132, 142);
+            font-family: arial;
+            font-size: 15px;
+            margin: 0;
+          "
+        >
+          # faq
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
