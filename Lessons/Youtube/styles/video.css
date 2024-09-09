@@ -1,0 +1,129 @@
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.channel-picture {
+  vertical-align: top;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50px;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author, .video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 16px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751) and (max-width: 999) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+ 
+
+.thumbnail {
+  width: 100%;
+ }
+
+ .video-title {
+   margin-top: 0px;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 20px;
+   margin-bottom: 10px;
+ }
+
+ .video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-size: 12px;
+  font-weight: 500px;
+  padding: 4px;
+  border-radius: 2px;
+ }
+
+ .video-grid a {
+  color: black;
+  text-decoration: none;
+ }
+
+ .channel-picture-container .channel-tooltip {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
+  justify-content: center;
+  bottom: -40px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  padding: 10px;
+  padding-left: 10px;
+  white-space: nowrap;
+  padding-right: 15px;
+  column-gap: 8px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+ }
+
+.channel-picture-container {
+  display: inline-block;
+  position: relative;
+ }
+
+.channel-picture-container:hover .channel-tooltip {
+  opacity: 1;
+ }
+
+ .hover-pic {
+  width: 46px;
+  border-radius: 55px;
+ }
+
+ .hover-name {
+  font-size: 11px;
+  font-weight: 800;
+  margin-top: 8px;
+  margin-bottom: 3px;
+
+ }
+
+ .hover-subs {
+  font-size: 9px;
+ }
