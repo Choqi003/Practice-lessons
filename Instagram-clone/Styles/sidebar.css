@@ -1,0 +1,62 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 335px;
+  background-color: rgb(255, 255, 255);
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgb(228, 227, 227);
+
+}
+
+.container-icons {
+  display: flex;
+  padding-left: 14px;
+  padding-top: 26px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-size: 15px;
+  row-gap: 9px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+  width: 315px;
+  padding-left: 3px;
+}
+
+.last-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+  width: 315px;
+  padding-left: 5px;
+  height: 47px;
+  margin-top: 240px;
+}
+
+.icon-container:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.threads {
+  height: 47px;
+  width: 37;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
